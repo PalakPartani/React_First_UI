@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+.header{
+  height:20px;
+  width:100%;
+  background-color: aliceblue;
+}
+head-fields{
+  text-align: center;
+}
+head-left{
+  text-align: right;
+
+}
+free-tab{
+  text-align: left;
+}
+pro-tab{
+  text-align: center;
+}
+enterprise-tab{
+  text-align: right;
+}
+
+type-f{
+  justify-items: left;
+}
