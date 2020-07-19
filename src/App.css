@@ -37,9 +37,28 @@
     transform: rotate(360deg);
   }
 }
+.container{
+  width: 100%;
+  margin: 0px auto
+}
+ui{
+  margin-top: -20px;
+}
+ul li{
+  list-style: none;
+  float: left;
+  padding: 10px;
+  cursor: pointer;
+}
+li:hover{
+  background-color: silver;
+  color: white;
+
+}
 
 .header{
-  height:40px;
+  display: flex;
+  height: auto;
   width:100%;
   background-color: rgba(245, 248, 250, 0.938);
   border:1px solid silver;
@@ -70,15 +89,25 @@
   color:black;
   /* height: 80%; */
   justify-content: space-evenly;
+  border-bottom: 1px solid silver;
 }
 .firstbox{
-
-  border: 1px solid silver;
+  /* border: 1px solid silver; */
   border-collapse:unset;
   height: 30%;
   width: 25%;
   text-align: center;
-  margin-left: 10px;
+  margin: 50px 10px 10px 10px;
+  cursor: pointer;
+}
+
+.firstbox:hover{
+  /* border: 1px solid red; */
+  border-collapse:unset;
+  height: auto;
+  width: 25%;
+  text-align: center;
+  margin: 10px 10px 10px 10px;
 }
 
 .secondbox{
@@ -169,9 +198,13 @@ padding-left: 5%;
     justify-content: center;
     text-align: center;
     width:100%;
-    height:30px;
     font-size: large;
-    background-color: rgba(245, 248, 250, 0.938);
+    background-color: rgba(165, 167, 168, 0.5);
+    padding: 5px
+  }
+
+  .firstbox:hover .free{
+    padding: 20px;
   }
 
   .pro{
@@ -195,8 +228,19 @@ padding-left: 5%;
   }
   
   .button-color{
-    border: blue;
+    background-color: white;
+    border: 1px solid blue;
     color:blue;
+    padding: 5px 10px;
+    align-content: flex-end;
+    justify-content: baseline;
+    bottom: 0;
+  }
+  .firstbox:hover .button-color{
+    background-color: blue;
+    border: 1px solid blue;
+    color:white;
+    padding: 5px 10px
   }
 
 .head-fields{
