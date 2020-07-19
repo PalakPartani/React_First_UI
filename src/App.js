@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PriceTypes from './components/PriceTypes';
+import Details from './components/Details';
 
 import './App.css';
 
@@ -11,10 +12,10 @@ class App extends Component {
       <div>
         <div className="container">
           <header className="header">
-            <div style={{ width: '40 %', padding: '10px' }}>
+            <div style={{ width: '40 %', padding: '25px' }}>
               Company Name
           </div>
-            <div style={{ width: '60 %', alignContent: 'top' }}>
+            <div style={{ width: '60 %' }}>
               <ul>
                 <li>FEATURES</li>
                 <li>ENTERPRISE</li>
@@ -27,48 +28,16 @@ class App extends Component {
             <h5>Pricing</h5>
           </div>
           <div className="heading">
-            <h2 >This is first React UI</h2>
+
             <p>Quickly build an effective pricing table for your potential</p>
             <p> customers with this layout.Its built with default </p><p>Material UI Components with little customization </p>
 
           </div>
           <PriceTypes />
-          {/* <div className="box">
-            <div className="firstbox">
-              <div className="free">
-                <p>Free</p>
-              </div>
 
-              <p><h2>$0 /mo</h2>
-          10 users included</p><p> 2 GB of storage</p><p> Help center access </p>
-              <p>Email support</p>
-              <button class="button-color" type="submit">SIGN UP FOR FREE</button>
-            </div>
+          <Details />
 
-            <div className="firstbox">
-              <div className="free">
-                <p>Pro</p>
-              </div>
-
-              <h2>$15 /mo</h2>
-              <p> 20 users included</p><p>10 GB of storage</p>
-              <p>Help center access </p>
-              <p>Email support</p>
-              <button class="button-color" type="submit">GET STARTED</button>
-            </div>
-
-            <div className="firstbox">
-              <div className="free">
-                <p>Enterprise</p>
-              </div>
-              <h2>$30 /mo</h2>
-              <p> 50 users included</p><p>30 GB of storage</p><p> Help center access</p><p>Phone and Email support</p>
-              <button class="button-color" type="submit">CONTACT US</button>
-            </div>
-          </div> */}
-
-
-          <div className="down-box">
+          {/* <div className="down-box">
             <div className="downfirstbox">
               <div className="down-name">
                 <h5>Company</h5>
@@ -106,7 +75,7 @@ class App extends Component {
               <p>Terms of Use</p>
             </div>
 
-          </div>
+          </div> */}
 
           <div className="copy">
             <p><h6>copyright@ Your Website 2020</h6></p>

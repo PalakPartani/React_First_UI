@@ -42,11 +42,14 @@
   margin: 0px auto
 }
 ui{
-  margin-top: -20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 ul li{
   list-style: none;
   float: left;
+  
+  text-align: center;
   padding: 10px;
   cursor: pointer;
 }
@@ -58,12 +61,12 @@ li:hover{
 
 .header{
   display: flex;
-  height: auto;
+  height: 50px;
   width:100%;
   background-color: rgba(245, 248, 250, 0.938);
   border:1px solid silver;
   text-align: left;
-  justify-content: space-around;
+  justify-content: space-between;;
 }
 
 .headingprice{
@@ -71,6 +74,9 @@ li:hover{
   color: black;
   font-size: 2vw;
   font-weight: 10%;
+  font-stretch: inherit;
+  font-family: sans-serif;
+  font-size: larger;
 }
 .heading{
   text-align: center;
@@ -92,13 +98,15 @@ li:hover{
   border-bottom: 1px solid silver;
 }
 .firstbox{
-  /* border: 1px solid silver; */
+  border: 1px solid silver;
   border-collapse:unset;
   height: 30%;
   width: 25%;
   text-align: center;
   margin: 50px 10px 10px 10px;
   cursor: pointer;
+  box-shadow: 0px 0px 10px silver;
+
 }
 
 .firstbox:hover{
@@ -197,14 +205,15 @@ padding-left: 5%;
     /* margin-left: 45%; */
     justify-content: center;
     text-align: center;
-    width:100%;
+    width:97%;
     font-size: large;
     background-color: rgba(165, 167, 168, 0.5);
-    padding: 5px
+    padding: 5px;
+    height: 50px;
   }
 
   .firstbox:hover .free{
-    padding: 20px;
+    padding: 20px 5px;
   }
 
   .pro{
