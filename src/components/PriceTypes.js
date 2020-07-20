@@ -38,8 +38,6 @@ export default class PriceTypes extends Component {
                     <button class="button-color" type="submit">CONTACT US</button>
                 </div>
             </div>
-
-
         );
     }
 }

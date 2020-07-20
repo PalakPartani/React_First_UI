@@ -5,6 +5,7 @@ import Details from './components/Details';
 import './App.css';
 import HeaderFields from './components/HeaderFields';
 import Data from './components/Data';
+import FooterData from './components/FooterData';
 
 class App extends Component {
 
@@ -43,6 +44,38 @@ class App extends Component {
       button: "CONTACT US"
     }]
 
+    var compList = [{
+
+      name: "Company",
+      team: "Team",
+      hist: "History",
+      con: "Contact",
+      loc: "Location"
+    },
+    {
+      name: "Features",
+      team: "Random Feature",
+      hist: "Team Feature",
+      con: "Developer Stuff",
+      loc: "Location"
+    },
+    {
+    name: "Resource",
+    team: "Resource Name",
+    hist: "Another Resource",
+    con: "Final Resource",
+    loc: "null"
+  },
+  {
+  name: "Legal",
+  team: "Privcy Policy",
+  hist: "Terms of Use",
+  con: null,
+  loc: null
+
+    }]
+
+
     // const name = "Plk";
 
     //console.log(Data)
@@ -52,10 +85,15 @@ class App extends Component {
       <div>
         <HeaderFields />
         {/* <PriceTypes /> */}
-        <Data brand={DataList} />
+        <Data DataList={DataList} />
+
+
+
+        <FooterData brandd={compList} />
+
         <Details />
         <div className="copy">
-          <p><h6>copyright@ Your Website 2000</h6></p>
+          <h6>copyright@ Your Website 2000</h6>
 
         </div>
       </div >

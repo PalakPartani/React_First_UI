@@ -10,12 +10,15 @@ export default class HeaderFields extends Component {
                     <div style={{ width: '40 %', padding: '25px' }}>
                         Company Name
           </div>
-                    <div style={{ width: '60 %' }}>
+                    <div style={{ width: '80 %' }}>
                         <ul>
                             <li>FEATURES</li>
                             <li>ENTERPRISE</li>
                             <li>SUPPORT </li>
-                            <li>LOGIN</li>
+                            <li style={{
+                                color: 'blue', border: '1px solid blue',
+                                padding: '4px'
+                            }}>LOGIN</li>
                         </ul>
                     </div>
                 </header>
