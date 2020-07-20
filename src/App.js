@@ -60,41 +60,37 @@ class App extends Component {
       loc: "Location"
     },
     {
-    name: "Resource",
-    team: "Resource Name",
-    hist: "Another Resource",
-    con: "Final Resource",
-    loc: "null"
-  },
-  {
-  name: "Legal",
-  team: "Privcy Policy",
-  hist: "Terms of Use",
-  con: null,
-  loc: null
+      name: "Resource",
+      team: "Resource Name",
+      hist: "Another Resource",
+      con: "Final Resource",
+      loc: ""
+    },
+    {
+      name: "Legal",
+      team: "Privcy Policy",
+      hist: "Terms of Use",
+      con: "",
+      loc: ""
 
     }]
 
-
-    // const name = "Plk";
-
-    //console.log(Data)
-
+    var LOGIN = "";
     return (
       // <div className="App">
       <div>
         <HeaderFields />
         {/* <PriceTypes /> */}
-        <Data DataList={DataList} />
+        <div style={{ margin: '0px auto', width: '1200px' }}>
+          <Data DataList={DataList} />
 
+          <FooterData brandd={compList} />
 
+          <Details />
+          <div className="copy">
+            <h6>copyright@ Your Website 2000</h6>
 
-        <FooterData brandd={compList} />
-
-        <Details />
-        <div className="copy">
-          <h6>copyright@ Your Website 2000</h6>
-
+          </div>
         </div>
       </div >
       // </div >
