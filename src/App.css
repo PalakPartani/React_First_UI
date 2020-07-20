@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap');
 /* .App {
   text-align: center;
 } */
@@ -271,4 +272,10 @@ enterprise-tab{
 
 type-f{
   justify-items: left;
+}
+
+.titlePrice{
+  font-size: 40px;
+  font-family: Roboto;
+  font-weight: 100;
 }

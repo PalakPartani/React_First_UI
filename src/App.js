@@ -3,87 +3,65 @@ import PriceTypes from './components/PriceTypes';
 import Details from './components/Details';
 
 import './App.css';
+import HeaderFields from './components/HeaderFields';
+import Data from './components/Data';
 
 class App extends Component {
+
+
   render() {
+    var DataList = [{
+      plan: "Free",
+      tagLine: null,
+      price: 0,
+      users: 10,
+      storage: 2,
+      help: "Help center access",
+      support: "Email support",
+      button: "SIGN UP FOR FREE"
+
+    }, {
+
+      plan: "Pro",
+      tagLine: "Most popular",
+      price: 15,
+      users: 20,
+      storage: 10,
+      help: "Help center access",
+      support: "Priority Email support",
+      button: "GET STARTED"
+
+    }, {
+
+      plan: "Enterprise",
+      tagLine: null,
+      price: 30,
+      users: 50,
+      storage: 30,
+      help: "Help center access",
+      support: "Phone & Email support",
+      button: "CONTACT US"
+    }]
+
+    // const name = "Plk";
+
+    //console.log(Data)
 
     return (
       // <div className="App">
       <div>
-        <div className="container">
-          <header className="header">
-            <div style={{ width: '40 %', padding: '25px' }}>
-              Company Name
-          </div>
-            <div style={{ width: '60 %' }}>
-              <ul>
-                <li>FEATURES</li>
-                <li>ENTERPRISE</li>
-                <li>SUPPORT </li>
-                <li>LOGIN</li>
-              </ul>
-            </div>
-          </header>
-          <div className="headingprice">
-            <h5>Pricing</h5>
-          </div>
-          <div className="heading">
+        <HeaderFields />
+        {/* <PriceTypes /> */}
+        <Data brand={DataList} />
+        <Details />
+        <div className="copy">
+          <p><h6>copyright@ Your Website 2000</h6></p>
 
-            <p>Quickly build an effective pricing table for your potential</p>
-            <p> customers with this layout.Its built with default </p><p>Material UI Components with little customization </p>
-
-          </div>
-          <PriceTypes />
-
-          <Details />
-
-          {/* <div className="down-box">
-            <div className="downfirstbox">
-              <div className="down-name">
-                <h5>Company</h5>
-              </div>
-
-              <p>Team</p>
-              <p>History</p>
-              <p>Contact Us</p>
-              <p>Location</p>
-            </div>
-            <div className="downsecondbox">
-              <div className="down-name">
-                <h5>Features</h5>
-              </div>
-              <p>Cool Stuff</p>
-              <p>Random Feature</p>
-              <p>Team Feature</p>
-              <p>Developer Stuff</p>
-              <p>Another One</p>
-            </div>
-            <div className="downthirdbox">
-              <div className="down-name">
-                <h5>Resources</h5>
-              </div>
-              <p>Resource</p>
-              <p>Resource Name</p>
-              <p>Another Resource</p>
-              <p>Final Resource</p>
-            </div>
-            <div className="fourthbox">
-              <div className="down-name">
-                <h5>Legal</h5>
-              </div>
-              <p>Privcy Policy</p>
-              <p>Terms of Use</p>
-            </div>
-
-          </div> */}
-
-          <div className="copy">
-            <p><h6>copyright@ Your Website 2020</h6></p>
-
-          </div>
-        </div >
-      </div>
+        </div>
+      </div >
+      // </div >
     );
   }
+
 }
 export default App;
