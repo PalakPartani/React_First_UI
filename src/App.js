@@ -7,6 +7,8 @@ import HeaderFields from './components/HeaderFields';
 import Data from './components/Data';
 import FooterData from './components/FooterData';
 
+import DefaultRouter from './components/DefaultRouter';
+
 class App extends Component {
 
 
@@ -75,7 +77,6 @@ class App extends Component {
 
     }]
 
-    var LOGIN = "";
     return (
       // <div className="App">
       <div>
@@ -84,16 +85,17 @@ class App extends Component {
         <div style={{ margin: '0px auto', width: '1200px' }}>
           <Data DataList={DataList} />
 
-          <FooterData brandd={compList} />
+          {/* <FooterData brandd={compList} /> */}
 
           <Details />
+          <DefaultRouter />
           <div className="copy">
             <h6>copyright@ Your Website 2000</h6>
 
           </div>
         </div>
       </div >
-      // </div >
+
     );
   }
 

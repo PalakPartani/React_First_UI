@@ -9,7 +9,7 @@ export default class HeaderFields extends Component {
             value: 'LOGIN',
             list: ["FEATURES", "ENTERPRISE", "SUPPORT"],
         };
-        console.log("name");
+
     }
 
     // onUpdateItems = () => {
@@ -23,7 +23,7 @@ export default class HeaderFields extends Component {
     // };
     // onAddItem = () => {
     //     this.setState(state => {
-    //         const list = [state.list.concat('               ' + state.value)];
+    //         const list = [state.list.concat(' ' + state.value)];
     //         return {
     //             list,
     //             value: '       LOGIN',
@@ -40,15 +40,6 @@ export default class HeaderFields extends Component {
             };
         });
     };
-    // onRemoveItem = i => {
-    //     this.setState(state => {
-    //         const list = state.list.filter((item, j) => i == j);
-
-    //         return {
-    //             list,
-    //         };
-    //     });
-    // };
 
     render() {
         return (
@@ -64,7 +55,7 @@ export default class HeaderFields extends Component {
 
                             </li>))}
                             <button className='loginButton' type="button" onClick={this.onRemoveFirstItem}>
-                                RemoveItem
+                                LOGIN
           </button>
                         </ul>
 
