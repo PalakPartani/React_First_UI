@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 export default class HeaderFields extends Component {
 
@@ -46,7 +47,12 @@ export default class HeaderFields extends Component {
             <div className="container">
                 <header className="header">
                     <div style={{ width: '50%', padding: '25px', fontWeight: 400, fontSize: 25 }}>
-                        Company Name
+                        <nav>
+                            <Link to='/feature'>
+                                Company Name
+                            </Link>
+                        </nav>
+
                     </div>
                     <div style={{ width: '50%' }}>
                         <ul>

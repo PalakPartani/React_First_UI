@@ -8,7 +8,9 @@ import Data from './components/Data';
 import FooterData from './components/FooterData';
 
 import DefaultRouter from './components/DefaultRouter';
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Nav from './components/Nav';
+import feature from './components/feature';
 class App extends Component {
 
 
@@ -78,26 +80,32 @@ class App extends Component {
     }]
 
     return (
-      // <div className="App">
       <div>
-        <HeaderFields />
+        <Router>
+          {/* <Nav /> */}
+          <HeaderFields />
+          <Route path="/feature" component={feature} />
+
+
+          {/* <HeaderFields /> */}
+);
+
         {/* <PriceTypes /> */}
-        <div style={{ margin: '0px auto', width: '1200px' }}>
-          <Data DataList={DataList} />
+          <div style={{ margin: '0px auto', width: '1200px' }}>
+            <Data DataList={DataList} />
 
-          {/* <FooterData brandd={compList} /> */}
+            {/* <FooterData brandd={compList} /> */}
 
-          <Details />
-          <DefaultRouter />
-          <div className="copy">
-            <h6>copyright@ Your Website 2000</h6>
-
+            <Details />
+            <DefaultRouter />
+            <div className="copy">
+              <h6>copyright@ Your Website 2000</h6>
+            </div>
           </div>
-        </div>
+        </Router>
       </div >
 
     );
   }
-
 }
 export default App;
