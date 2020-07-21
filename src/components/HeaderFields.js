@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../css/Style.css';
 import { Link } from 'react-router-dom';
 
 export default class HeaderFields extends Component {
@@ -62,7 +62,7 @@ export default class HeaderFields extends Component {
                             </li>))}
                             <button className='loginButton' type="button" onClick={this.onRemoveFirstItem}>
                                 LOGIN
-          </button>
+                            </button>
                         </ul>
 
                         {/* <ul>
@@ -73,15 +73,6 @@ export default class HeaderFields extends Component {
                         </ul> */}
                     </div>
                 </header>
-                <div className="headingprice">
-                    <h1 className="titlePrice">Pricing</h1>
-                </div>
-                <div className="heading">
-
-                    <p>Quickly build an effective pricing table for your potential</p>
-                    <p> customers with this layout.Its built with default </p><p>Material UI Components with little customization </p>
-
-                </div>
             </div>
         );
     }

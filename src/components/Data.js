@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../css/Style.css';
 import '../index.js';
 
 export default class Data extends Component {

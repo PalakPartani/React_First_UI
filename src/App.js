@@ -82,9 +82,10 @@ class App extends Component {
     return (
       <div>
         <Router>
-          {/* <Nav /> */}
+
           <HeaderFields />
-          <Route path="/feature" component={feature} />
+          {/* <Route path="/" exact component={App} /> */}
+          <Route path="/feature" exact component={feature} />
 
 
           {/* <HeaderFields /> */}
