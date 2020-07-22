@@ -6,8 +6,6 @@ function Nav() {
             <ul>
                 <li>Feature</li>
             </ul>
-
-
         </nav>
     )
 }

@@ -25,7 +25,6 @@ export default class Data extends Component {
                 </div >
 
             )
-
         }
 
         return (

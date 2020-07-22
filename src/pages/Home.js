@@ -92,10 +92,10 @@ class App extends Component {
                     <p> customers with this layout.Its built with default </p><p>Material UI Components with little customization </p>
                 </div>
 
-                {/* Price Listing */}
                 {/* <PriceTypes /> */}
                 <div style={{ margin: '0px auto', width: '1200px' }}>
                     <Data DataList={DataList} />
+                    <Details />
                     <div className="copy">
                         <h6>copyright@ Your Website 2000</h6>
                     </div>

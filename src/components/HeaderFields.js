@@ -13,25 +13,6 @@ export default class HeaderFields extends Component {
 
     }
 
-    // onUpdateItems = () => {
-    //     this.setState(state => {
-    //         const list = state.list.map(item => item + 1);
-
-    //         return {
-    //             list,
-    //         };
-    //     });
-    // };
-    // onAddItem = () => {
-    //     this.setState(state => {
-    //         const list = [state.list.concat(' ' + state.value)];
-    //         return {
-    //             list,
-    //             value: '       LOGIN',
-    //         };
-    //     });
-    // }
-
     onRemoveFirstItem = () => {
         this.setState(state => {
             const [first, ...rest] = state.list;
@@ -64,13 +45,6 @@ export default class HeaderFields extends Component {
                                 LOGIN
                             </button>
                         </ul>
-
-                        {/* <ul>
-                            <li>FEATURES</li>
-                            <li>ENTERPRISE</li>
-                            <li>SUPPORT </li>
-                            <li className='loginButton'>LOGIN</li>
-                        </ul> */}
                     </div>
                 </header>
             </div>
