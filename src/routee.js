@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import DefaultRouter from './components/DefaultRouter';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import ReactDOM from 'react-dom';
+import HeaderFields from './components/HeaderFields';
 
 //pages
 import Home from './pages/Home';
 import Feature from './pages/Feature';
 import Login from './pages/Login';
+import Details from './components/Details';
 
 export default class Routingg extends Component {
 
@@ -14,9 +15,11 @@ export default class Routingg extends Component {
 
         return (
             <Router>
+                <HeaderFields />
                 <Route exact path="/" component={Home} />
                 <Route exact path="/feature" component={Feature} />
                 <Route exact path="/login" component={Login} />
+                <Details />
             </Router>
         )
     }

@@ -83,7 +83,7 @@ class App extends Component {
         return (
             <div>
                 {/* Header part */}
-                <HeaderFields />
+                {/* <HeaderFields /> */}
                 <div className="headingprice">
                     <h1 className="titlePrice">Pricing</h1>
                 </div>
@@ -95,7 +95,7 @@ class App extends Component {
                 {/* <PriceTypes /> */}
                 <div style={{ margin: '0px auto', width: '1200px' }}>
                     <Data DataList={DataList} />
-                    <Details />
+                    {/* <Details /> */}
                     <div className="copy">
                         <h6>copyright@ Your Website 2000</h6>
                     </div>

@@ -294,3 +294,52 @@ type-f{
   font-family: Roboto;
   font-weight: 100;
 }
+
+table{
+  width: 100%;
+  margin:50px 0px;
+  border-collapse: collapse;
+}
+
+.bodyy{
+  background-color:white;
+  height:100%;
+  margin-top: 10px;
+  padding: 10px 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 0px 10px silver;
+  border:1px solid silver;
+}
+.small{
+  display: flex; 
+  width:40%;background-color: white; 
+  border: 1px solid silver;
+  border-radius: 5px;
+  height: 36px;
+}
+
+.addUSerButton{
+  padding: 20px;
+  text-align:end;
+  margin-top: -10px;
+  /* margin-right: -65% */
+  /* font-weight: 40%; */
+}
+.userTitleLeft{
+  width: 65%;
+}
+.userTitleRight{
+  width: 30%;
+}
+
+.button{
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

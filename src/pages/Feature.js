@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import HeaderFields from '../components/HeaderFields';
 import { Link } from 'react-router-dom';
 import Operation from './Operation';
+import '../css/Style.css';
+
 
 export default class Home extends Component {
 
@@ -80,17 +82,46 @@ export default class Home extends Component {
         },
         ];
 
-        var data = [{
-            plan: "Free"
-        }]
+        // var data = [{
+        //     plan: "Free"
+        // }]
 
         return (
             <div>
-                <HeaderFields />
+                {/* <HeaderFields /> */}
+                <div className="bodyy">
+                    <div style={{ display: "flex", height: "10%", width: "auto", justifyContent: "center" }}>
+                        <div className="userTitleLeft">
+                            <h2>Users (<a id="count"></a>)</h2>
+                        </div>
+                        <div className="userTitleRight">
+                            <div className="addUSerButton">
+                                <button className="button" onclick="myFunction()"> + Add User</button></div>
+                        </div>
+                    </div>
+                    <div className="small">
+                        {/* style="display: flex; width:40%;background-color: white; height:6%;border: 1px solid silver;border-radius: 5px;"> --> */}
+                        {/* <div style="width: 90%;">
+                        <form action="index.html">
+                            <input type="text" placeholder="Search by name,email,status,role.." name="Search"
+                                style="width: 100%; border: none;height: 8px;">
+                                   
+                        </form>
+                    </div> */}
+                    </div>
+
+                    {/* <div style="padding: 10px 10px;"></div> */}
+                </div>
+
+
+
+
+
+
 
                 <div style={{ margin: '0px auto', width: '1200px' }}>
                     <h1>Feature page</h1>
-                    <table>
+                    <table className="table">
                         {users.map(id =>
                             <tr>
                                 <td>{id.Name}</td>
@@ -103,7 +134,7 @@ export default class Home extends Component {
                         }
                     </table>
                 </div>
-            </div>
+            </div >
         )
     }
 }
