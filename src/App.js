@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import PriceTypes from './components/PriceTypes';
 import Details from './components/Details';
 
 import './App.css';
 import HeaderFields from './components/HeaderFields';
 import Data from './components/Data';
-import FooterData from './components/FooterData';
 
 import DefaultRouter from './components/DefaultRouter';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Nav from './components/Nav';
 import feature from './components/feature';
 class App extends Component {
 
@@ -82,23 +79,12 @@ class App extends Component {
     return (
       <div>
         <Router>
-
           <HeaderFields />
-          {/* <Route path="/" exact component={App} /> */}
           <Route path="/feature" exact component={feature} />
-
-
-          {/* <HeaderFields /> */}
-);
-
-        {/* <PriceTypes /> */}
+          );
           <div style={{ margin: '0px auto', width: '1200px' }}>
             <Data DataList={DataList} />
-
-            {/* <FooterData brandd={compList} /> */}
-
-            <Details />
-            <DefaultRouter />
+            <FooterData />
             <div className="copy">
               <h6>copyright@ Your Website 2000</h6>
             </div>

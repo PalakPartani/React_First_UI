@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Feature from './pages/Feature';
 import Login from './pages/Login';
 import Details from './components/Details';
+import User from './pages/User';
 
 export default class Routingg extends Component {
 
@@ -19,6 +20,7 @@ export default class Routingg extends Component {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/feature" component={Feature} />
                 <Route exact path="/login" component={Login} />
+                <Route exact path="/adduser" component={User} />
                 <Details />
             </Router>
         )

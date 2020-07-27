@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import HeaderFields from '../components/HeaderFields';
-import { Link } from 'react-router-dom';
-import Operation from './Operation';
 import '../css/Style.css';
+import { withRouter } from 'react-router';
 
-
-export default class Home extends Component {
+class Home extends Component {
+    newPage = () => {
+        this.props.history.push('/adduser');
+    }
 
     render() {
         var users = [{
@@ -82,13 +82,8 @@ export default class Home extends Component {
         },
         ];
 
-        // var data = [{
-        //     plan: "Free"
-        // }]
-
         return (
             <div>
-                {/* <HeaderFields /> */}
                 <div className="bodyy">
                     <div style={{ display: "flex", height: "10%", width: "auto", justifyContent: "center" }}>
                         <div className="userTitleLeft">
@@ -96,28 +91,12 @@ export default class Home extends Component {
                         </div>
                         <div className="userTitleRight">
                             <div className="addUSerButton">
-                                <button className="button" onclick="myFunction()"> + Add User</button></div>
+                                <button className="button" onClick={this.newPage}> + Add User</button></div>
                         </div>
                     </div>
                     <div className="small">
-                        {/* style="display: flex; width:40%;background-color: white; height:6%;border: 1px solid silver;border-radius: 5px;"> --> */}
-                        {/* <div style="width: 90%;">
-                        <form action="index.html">
-                            <input type="text" placeholder="Search by name,email,status,role.." name="Search"
-                                style="width: 100%; border: none;height: 8px;">
-                                   
-                        </form>
-                    </div> */}
                     </div>
-
-                    {/* <div style="padding: 10px 10px;"></div> */}
                 </div>
-
-
-
-
-
-
 
                 <div style={{ margin: '0px auto', width: '1200px' }}>
                     <h1>Feature page</h1>
@@ -138,3 +117,4 @@ export default class Home extends Component {
         )
     }
 }
+export default withRouter(Home);

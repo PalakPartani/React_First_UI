@@ -10,7 +10,6 @@ export default class HeaderFields extends Component {
             value: 'LOGIN',
             list: ["FEATURES", "ENTERPRISE", "SUPPORT"],
         };
-
     }
 
     onRemoveFirstItem = () => {
@@ -33,7 +32,6 @@ export default class HeaderFields extends Component {
                                 Company Name
                             </Link>
                         </nav>
-
                     </div>
                     <div style={{ width: '50%' }}>
                         <ul>
@@ -50,5 +48,4 @@ export default class HeaderFields extends Component {
             </div>
         );
     }
-
 }

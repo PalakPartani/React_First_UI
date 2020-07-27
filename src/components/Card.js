@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/Style.css';
 import '../index.js';
 
-export default class Data extends Component {
+export default class Card extends Component {
 
     render() {
         console.log(this.props.DataList)

@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
-
-//stylesheet
 import '../css/Style.css';
-
-// component file
-import HeaderFields from '../components/HeaderFields';
 import Data from '../components/Data';
-import FooterData from '../components/FooterData';
-import Nav from '../components/Nav';
-import feature from '../components/feature';
-import PriceTypes from '../components/PriceTypes';
-import Details from '../components/Details';
-
 
 class App extends Component {
 
@@ -82,8 +71,6 @@ class App extends Component {
 
         return (
             <div>
-                {/* Header part */}
-                {/* <HeaderFields /> */}
                 <div className="headingprice">
                     <h1 className="titlePrice">Pricing</h1>
                 </div>
@@ -91,11 +78,8 @@ class App extends Component {
                     <p>Quickly build an effective pricing table for your potential</p>
                     <p> customers with this layout.Its built with default </p><p>Material UI Components with little customization </p>
                 </div>
-
-                {/* <PriceTypes /> */}
                 <div style={{ margin: '0px auto', width: '1200px' }}>
                     <Data DataList={DataList} />
-                    {/* <Details /> */}
                     <div className="copy">
                         <h6>copyright@ Your Website 2000</h6>
                     </div>

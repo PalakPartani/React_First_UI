@@ -22,7 +22,6 @@ export default class FooterData extends Component {
                     </div>
                 </div>
             )
-
         }
 
         return (
